@@ -1,579 +1,229 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Reimbursement Calculator</title>
-        <meta name="description">
-        <link rel="stylesheet" href="style.css"/>
-        <script src="app.js" async></script>
-    </head>
-      <body>
-        <section class="headerforimage">
-            <div class="headerimage">
-                <img src="https://i.postimg.cc/XqKvZPTT/17th-White-Logo.png" alt="Bean-Machine-Coffee" border="0">
-                <p>REIMBURSEMENT CALCULATOR</p>
-            </div>
-        </section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reimbursement Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="flex flex-col items-start px-6 py-4">
+    <header class="text-3xl font-bold">Reimbursements</header>
+  </div>
 
-        <section class="container content-section">
-            <h2 class="section-header">GENERAL ITEMS</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">ADV LOCKPICKS</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$22</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADV LOCKPICKS</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BACKPACK</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$4550</span>
-                        <button class="btn btn-primary shop-item-button"type="button">BACKPACK</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BANDAGES</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$34</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BANDAGES</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BASKETBALL HOOP</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$2350</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BASKETBALL HOOP</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BLEACH WIPES</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$89</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BLEACH WIPES</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BOOMBOX</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$10000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BOOMBOX</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BOOSTING TABLET</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$1000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BOOSTING TABLET</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">CLEANING KIT</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$150</span>
-                        <button class="btn btn-primary shop-item-button" type="button">CLEANING KIT</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">COCOMILK</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$3</span>
-                        <button class="btn btn-primary shop-item-button" type="button">COCOMILK</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">CROWBAR</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$12</span>
-                        <button class="btn btn-primary shop-item-button" type="button">CROWBAR</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">DINKA MARQUIS</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$40000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">DINKA MARQUIS</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">DRILL BIT</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$9</span>
-                        <button class="btn btn-primary shop-item-button" type="button">DRILL BIT</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">DRIVER LICENSE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$112</span>
-                        <button class="btn btn-primary shop-item-button" type="button">DRIVER LICENSE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">DRUG SCALE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$20</span>
-                        <button class="btn btn-primary shop-item-button" type="button">DRUG SCALE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">DUFFLE BAG</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$100</span>
-                        <button class="btn btn-primary shop-item-button" type="button">DUFFLE BAG</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">FLASHLIGHT</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$24</span>
-                        <button class="btn btn-primary shop-item-button" type="button">FLASHLIGHT</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">HOUSE LOCATOR</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$100</span>
-                        <button class="btn btn-primary shop-item-button" type="button">HOUSE LOCATOR</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">HOUSE LOCKPICK</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$10</span>
-                        <button class="btn btn-primary shop-item-button" type="button">HOUSE LOCKPICK</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">ID CARD</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$107</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ID CARD</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">JETSKI-SEASHARK</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$40000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">JETSKI-SEASHARK</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">LASER POWDER</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$20</span>
-                        <button class="btn btn-primary shop-item-button" type="button">LASER POWDER</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">LOCKPICKS</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$9</span>
-                        <button class="btn btn-primary shop-item-button" type="button">LOCKPICKS</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">MINING DRILL</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$22800</span>
-                        <button class="btn btn-primary shop-item-button" type="button">MINING DRILL</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">MINING LASER</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$58800</span>
-                        <button class="btn btn-primary shop-item-button" type="button">MINING LASER</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">NAGASKIDINGHY 2 SEATER</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$40000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">NAGASKIDINGHY 2 SEATER</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PAPER BAG</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$245</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PAPER BAG</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PEGASSI SPEEDER</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$400000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PEGASSI SPEEDER</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PERSONAL WALLET</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$53</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PERSONAL WALLET</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PHONE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$850</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PHONE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PICKAXE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$9</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PICKAXE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PLASTIC</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$115</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PLASTIC</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">POWER SAW</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$230</span>
-                        <button class="btn btn-primary shop-item-button" type="button">POWER SAW</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">RADIO</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$500</span>
-                        <button class="btn btn-primary shop-item-button" type="button">RADIO</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SPRAY</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$860</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SPRAY</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SPRAY REMOVER</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$940</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SPRAY REMOVER</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">WEED IN BAG</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$300</span>
-                        <button class="btn btn-primary shop-item-button" type="button">WEED IN BAG</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">COKE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$1000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">COKE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">METH</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$800</span>
-                        <button class="btn btn-primary shop-item-button" type="button">METH</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">LEAN</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$800</span>
-                        <button class="btn btn-primary shop-item-button" type="button">LEAN</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container content-section">
-            <h2 class="section-header">FOOD & DRINK</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BEER</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$200</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BEER</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">COFFEE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$100</span>
-                        <button class="btn btn-primary shop-item-button"type="button">COFFEE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">COLA</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$80</span>
-                        <button class="btn btn-primary shop-item-button" type="button">COLA</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">GIN</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$44</span>
-                        <button class="btn btn-primary shop-item-button" type="button">GIN</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">GRILLED CHEESE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$80</span>
-                        <button class="btn btn-primary shop-item-button" type="button">GRILLED CHEESE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">LEMON</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$2</span>
-                        <button class="btn btn-primary shop-item-button" type="button">LEMON</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">LIME</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$3</span>
-                        <button class="btn btn-primary shop-item-button" type="button">LIME</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">MINT</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$3</span>
-                        <button class="btn btn-primary shop-item-button" type="button">MINT</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PINEAPPLE JUICE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$2</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PINEAPPLE JUICE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">RUM</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$45</span>
-                        <button class="btn btn-primary shop-item-button" type="button">RUM</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SANDWICH</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$60</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SANDWICH</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SNIKKEL</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$65</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SNIKKEL</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SPRUNK</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$200</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SPRUNK</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SUGAR</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$3</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SUGAR</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">TWERKS</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$70</span>
-                        <button class="btn btn-primary shop-item-button" type="button">TWERKS</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">VODKA</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$58</span>
-                        <button class="btn btn-primary shop-item-button" type="button">VODKA</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">WATER</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$62</span>
-                        <button class="btn btn-primary shop-item-button" type="button">WATER</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">WHISKEY</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$300</span>
-                        <button class="btn btn-primary shop-item-button" type="button">WHISKEY</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container content-section">
-            <h2 class="section-header">WEAPONS</h2>
-            <div class="shop-items">
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">.50 PISTOL</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$17500</span>
-                        <button class="btn btn-primary shop-item-button" type="button">.50 PISTOL</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BAT</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$5800</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BAT</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">KNIFE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$5950</span>
-                        <button class="btn btn-primary shop-item-button" type="button">KNIFE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">ASSAULT</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$400000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ASSAULT</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">BULLPUMP RIFFLE</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$380000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">BULLPUMP RIFFLE</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">COMBAT PDW</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$300000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">COMBAT PDW</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">HEAVY PISTOL</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$80000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">HEAVY PISTOL</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">MK2</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$45000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">MK2</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">PISTOL</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$10000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">PISTOL</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SHOTGUN</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$200000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SHOTGUN</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SMG</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$275000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SMG</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">UZI</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$285000</span>
-                        <button class="btn btn-primary shop-item-button" type="button">UZI</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">.45 AMMO</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$250</span>
-                        <button class="btn btn-primary shop-item-button" type="button">.45 AMMO</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">.50 AMMO</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$1300</span>
-                        <button class="btn btn-primary shop-item-button" type="button">.50 AMMO</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">9MM AMMO</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$150</span>
-                        <button class="btn btn-primary shop-item-button" type="button">9MM AMMO</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">AR BULLET</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$300</span>
-                        <button class="btn btn-primary shop-item-button" type="button">AR BULLET</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <span class="shop-item-title" style="display: none;">SHOTGUN AMMO</span>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price" style="display: none;">$250</span>
-                        <button class="btn btn-primary shop-item-button" type="button">SHOTGUN AMMO</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-       
-        <section class="container content-section">
-            <h2 class="section-header">CART</h2>
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-            </div>
-            <div class="cart-items">
-                
-            </div>
+  <main class="flex flex-col lg:flex-row gap-6 p-6 pb-[28rem] lg:pb-6">
+    <!-- Items Grid -->
+    <div id="itemsGrid" class="flex flex-wrap gap-4 flex-1"></div>
 
-            <!-- Discount Container -->
-        <div class="discount-container">
-            <label for="discount">Discount (%): </label>
-            <input type="number" id="discount" value="0" min="0" max="100">
+    <!-- Checkout Sidebar -->
+    <aside
+      id="sidebar"
+      class="bg-gray-800 w-full lg:w-80 rounded-t-lg lg:rounded lg:sticky lg:top-6 lg:self-start fixed bottom-0 left-0 right-0 z-40 lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto transition-all duration-300"
+      data-expanded="true"
+    >
+      <div class="flex justify-between items-center px-4 py-2 border-b border-gray-700">
+        <h2 class="text-xl font-bold">Checkout List</h2>
+        <div class="flex gap-2">
+          <button onclick="resetCart()" class="bg-red-500 px-3 py-1 rounded">Reset</button>
+          <button onclick="toggleCheckoutMobile()" id="checkoutToggle" class="lg:hidden bg-gray-700 px-3 py-1 rounded text-white">▲</button>
         </div>
+      </div>
 
-            <div class="cart-total">
-                <strong class="cart-total-title">Total Reimbursement</strong>
-                <span class="cart-total-price">$0.00</span>
-            </div>
+      <div id="sidebarContent" class="px-4 pb-4 overflow-y-auto lg:overflow-y-visible transition-all duration-300 max-h-64" style="max-height: 16rem;">
+        <ul id="checkoutList" class="space-y-2 mb-4"></ul>
+        <p>Invoices: <span id="totalPrice">$0</span></p>
+        <button onclick="exportReceipt()" class="bg-blue-500 px-3 py-1 rounded w-full mt-2">Export Receipt</button>
+      </div>
+    </aside>
+  </main>
 
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
+  <!-- Receipt Modal -->
+  <div id="receiptModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
+    <div class="bg-white text-black rounded-lg shadow-lg p-6 w-full max-w-xl">
+      <h2 class="text-xl font-bold mb-4">Receipt</h2>
+      <pre id="receiptText" class="bg-gray-100 p-4 rounded overflow-auto text-sm h-64 whitespace-pre-wrap"></pre>
+      <div class="mt-4 flex justify-between">
+        <button onclick="copyReceipt()" class="bg-green-600 text-white px-4 py-2 rounded">Copy Receipt</button>
+        <button onclick="closeReceipt()" class="bg-black text-white px-4 py-2 rounded">Close</button>
+      </div>
+    </div>
+  </div>
 
-        
-    </body>
+  <script>
+    const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTzvn4vWcBKNkm2YMSPYgRnFkleAgKgkLT1XrKBJa63kZVbxZSiATr6zJp-ph-9a4lHqIimtIyeRX82/pub?output=csv';
+    const categories = {};
+    let cart = [];
+
+    function formatPrice(value) {
+      return "$" + value.toLocaleString("en-US", { maximumFractionDigits: 0 });
+    }
+
+    function fetchSheetData() {
+      fetch(csvUrl)
+        .then(res => res.text())
+        .then(csv => {
+          const rows = csv.trim().split('\n').map(r => r.split(',').map(cell => cell.trim()));
+          let currentCategory = null;
+          rows.forEach(([item, price]) => {
+            if (item && !price) {
+              currentCategory = item;
+              if (!categories[currentCategory]) categories[currentCategory] = [];
+            } else if (item && price && currentCategory) {
+              const numericPrice = parseInt(price.replace(/[^0-9]/g, ''));
+              if (!isNaN(numericPrice)) {
+                categories[currentCategory].push({ item, price: numericPrice });
+              }
+            }
+          });
+          renderCategories();
+          renderCart();
+        })
+        .catch(err => console.error("Failed to fetch and parse sheet:", err));
+    }
+
+    function renderCategories() {
+      const itemsGrid = document.getElementById("itemsGrid");
+      itemsGrid.innerHTML = '';
+
+      for (const cat in categories) {
+        const section = document.createElement("div");
+        section.className = "bg-gray-800 rounded w-full";
+
+        const header = document.createElement("div");
+        header.className = "font-bold text-lg px-4 py-2 bg-gray-700 rounded-t";
+        header.textContent = cat;
+
+        const itemWrapper = document.createElement("div");
+        itemWrapper.className = "flex flex-wrap gap-4 p-4";
+
+        categories[cat].forEach(({ item, price }) => {
+          const div = document.createElement("div");
+          div.className = "bg-gray-700 p-4 rounded shadow cursor-pointer hover:bg-gray-600 w-full sm:w-[48%] md:w-[30%] lg:w-[22%]";
+          div.innerHTML = `<div class='font-semibold mb-1'>${item}</div><p class='mb-1'>${formatPrice(price)}</p>`;
+          div.onclick = () => addToCart(item, price);
+          itemWrapper.appendChild(div);
+        });
+
+        section.appendChild(header);
+        section.appendChild(itemWrapper);
+        itemsGrid.appendChild(section);
+      }
+    }
+
+    function addToCart(item, price) {
+      const existing = cart.find(entry => entry.item === item);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ item, price, qty: 1 });
+      }
+      renderCart();
+    }
+
+    function renderCart() {
+      const list = document.getElementById("checkoutList");
+      const totalPriceEl = document.getElementById("totalPrice");
+
+      list.innerHTML = '';
+      let total = 0;
+
+      cart.forEach(({ item, price, qty }, index) => {
+        const li = document.createElement("li");
+        li.className = "flex justify-between items-center bg-gray-700 p-2 rounded";
+        li.innerHTML = `
+          <div>
+            ${item} - ${formatPrice(price)}<br>
+            <input type="number" min="1" value="${qty}" onchange="updateQty(${index}, this.value)" class="w-16 text-black px-1 rounded mt-1" />
+          </div>
+          <button onclick="removeItem(${index})" class="text-red-400">✕</button>
+        `;
+        total += price * qty;
+        list.appendChild(li);
+      });
+
+      totalPriceEl.textContent = formatPrice(total);
+    }
+
+    function updateQty(index, newQty) {
+      const qty = parseInt(newQty);
+      if (!isNaN(qty) && qty > 0) {
+        cart[index].qty = qty;
+        renderCart();
+      }
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      renderCart();
+    }
+
+    function resetCart() {
+      cart = [];
+      renderCart();
+    }
+
+    function exportReceipt() {
+      let total = 0;
+      cart.forEach(({ price, qty }) => {
+        total += price * qty;
+      });
+
+      const text = `Reimbursement: ${formatPrice(total)}`;
+      document.getElementById("receiptText").textContent = text;
+      document.getElementById("receiptModal").classList.remove("hidden");
+    }
+
+    function copyReceipt() {
+      navigator.clipboard.writeText(document.getElementById("receiptText").textContent)
+        .then(() => alert("Receipt copied to clipboard."));
+    }
+
+    function closeReceipt() {
+      document.getElementById("receiptModal").classList.add("hidden");
+    }
+
+    function toggleCheckoutMobile() {
+      if (window.innerWidth >= 1024) return;
+
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("sidebarContent");
+      const toggleBtn = document.getElementById("checkoutToggle");
+      const isExpanded = sidebar.getAttribute("data-expanded") === "true";
+
+      if (isExpanded) {
+        content.style.maxHeight = "0px";
+        content.style.overflowY = "hidden";
+        content.style.paddingBottom = "0";
+        toggleBtn.textContent = "▲";
+      } else {
+        content.style.maxHeight = "16rem";
+        content.style.overflowY = "auto";
+        content.style.paddingBottom = "1rem";
+        toggleBtn.textContent = "▼";
+      }
+
+      sidebar.setAttribute("data-expanded", (!isExpanded).toString());
+    }
+
+    window.addEventListener("resize", () => {
+      const isDesktop = window.innerWidth >= 1024;
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("sidebarContent");
+      const toggleBtn = document.getElementById("checkoutToggle");
+
+      if (isDesktop) {
+        content.style.maxHeight = "none";
+        content.style.overflowY = "visible";
+        content.style.paddingBottom = "1rem";
+        toggleBtn.textContent = "▼";
+        sidebar.setAttribute("data-expanded", "true");
+      } else {
+        content.style.maxHeight = "16rem";
+        content.style.overflowY = "auto";
+      }
+    });
+
+    fetchSheetData();
+  </script>
+</body>
 </html>
