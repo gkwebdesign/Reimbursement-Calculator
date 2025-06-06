@@ -18,7 +18,7 @@
     <!-- Checkout Sidebar -->
     <aside
       id="sidebar"
-      class="bg-gray-800 w-full lg:w-80 rounded-t-lg lg:rounded lg:sticky lg:top-6 lg:self-start fixed bottom-0 left-0 right-0 z-40 lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto transition-all duration-300"
+      class="bg-gray-800 w-full lg:w-80 rounded-t-lg lg:rounded lg:sticky lg:top-6 lg:self-start fixed bottom-0 left-0 right-0 z-40 lg:h-auto lg:max-h-screen lg:overflow-y-auto transition-all duration-300"
       data-expanded="true"
     >
       <div class="flex justify-between items-center px-4 py-2 border-b border-gray-700">
@@ -76,7 +76,6 @@
             }
           });
           renderCategories();
-          renderCart();
         })
         .catch(err => console.error("Failed to fetch and parse sheet:", err));
     }
