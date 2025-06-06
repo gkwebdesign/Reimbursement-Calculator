@@ -17,8 +17,7 @@
 
     <!-- Checkout Sidebar -->
     <aside
-      id="sidebar"
-      class="bg-gray-800 w-full lg:w-80 rounded-t-lg lg:rounded lg:sticky lg:top-6 lg:self-start fixed bottom-0 left-0 right-0 z-40 lg:h-auto lg:max-h-screen lg:overflow-y-auto transition-all duration-300"
+      id="sidebar" class="bg-gray-800 w-full lg:w-80 rounded-t-lg lg:rounded fixed bottom-0 left-0 right-0 z-40 lg:sticky lg:top-6 lg:self-start lg:h-[80vh] lg:overflow-hidden transition-all duration-300"
       data-expanded="true"
     >
       <div class="flex justify-between items-center px-4 py-2 border-b border-gray-700">
@@ -29,10 +28,15 @@
         </div>
       </div>
 
-      <div id="sidebarContent" class="px-4 pb-4 overflow-y-auto lg:overflow-y-visible transition-all duration-300 max-h-64" style="max-height: 16rem;">
-        <ul id="checkoutList" class="space-y-2 mb-4"></ul>
-        <p>Invoices: <span id="totalPrice">$0</span></p>
-        <button onclick="exportReceipt()" class="bg-blue-500 px-3 py-1 rounded w-full mt-2">Export Receipt</button>
+      <div id="sidebarContent" class="flex flex-col px-4 pb-4 max-h-[16rem] overflow-y-auto lg:max-h-none lg:h-full">
+  <div class="flex-1 overflow-y-auto">
+    <ul id="checkoutList" class="space-y-2 mb-4"></ul>
+  </div>
+  <div class="sticky bottom-0 bg-gray-800 pt-4 border-t border-gray-700">
+    <p>Invoices: <span id="totalPrice">$0</span></p>
+    <button onclick="exportReceipt()" class="bg-blue-500 px-3 py-1 rounded w-full mt-2">Export Receipt</button>
+    <div class="pb-4"></div>
+  </div>
       </div>
     </aside>
   </main>
@@ -52,7 +56,7 @@
   <script>
     const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTzvn4vWcBKNkm2YMSPYgRnFkleAgKgkLT1XrKBJa63kZVbxZSiATr6zJp-ph-9a4lHqIimtIyeRX82/pub?output=csv';
     const categories = {};
-    let cart = [];
+    let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
 
     function formatPrice(value) {
       return "$" + value.toLocaleString("en-US", { maximumFractionDigits: 0 });
@@ -117,6 +121,7 @@
         cart.push({ item, price, qty: 1 });
       }
       renderCart();
+sessionStorage.setItem("cart", JSON.stringify(cart));
     }
 
     function renderCart() {
@@ -157,9 +162,10 @@
     }
 
     function resetCart() {
-      cart = [];
-      renderCart();
-    }
+  cart = [];
+  sessionStorage.removeItem("cart");
+  renderCart();
+}
 
     function exportReceipt() {
       let total = 0;
@@ -223,6 +229,7 @@
     });
 
     fetchSheetData();
+renderCart();
     window.dispatchEvent(new Event('resize'));
   </script>
 </body>
